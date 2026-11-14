@@ -23,6 +23,6 @@ def ask():
     if not prompt: return jsonify(error='Escreve um pedido.'),400
     answer=nova.handle(prompt); save_message(DB,'user',prompt); save_message(DB,'assistant',answer)
     return jsonify(answer=answer)
-if __name__=='__main__':
-    threading.Timer(1.2,lambda:webbrowser.open('http://127.0.0.1:5055')).start()
-    web.run(host='127.0.0.1',port=5055,debug=False)
+if __name__ == "__main__":
+    port = int(os.environ.get("PORT", 5000))
+    app.run(host="0.0.0.0", port=port)
