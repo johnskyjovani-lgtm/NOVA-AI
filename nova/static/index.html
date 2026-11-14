@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="pt">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#080d17">
+  <meta name="description" content="NOVA AI — assistente inteligente da JOHN SKY DESIGN.">
+  <title>NOVA AI | JOHN SKY DESIGN</title>
+  <link rel="manifest" href="/manifest.json">
+  <link rel="icon" href="/assets/icon-192.png">
+  <link rel="apple-touch-icon" href="/assets/icon-192.png">
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <div class="ambient ambient-one"></div><div class="ambient ambient-two"></div>
+  <div class="app-shell">
+    <header class="topbar">
+      <div class="brand">
+        <img class="brand-logo" src="/assets/john-sky-design-logo.png" alt="Logótipo John Sky Design">
+        <div class="brand-copy"><span class="overline">JOHN SKY DESIGN · LUANDA, ANGOLA</span><h1>NOVA <em>AI</em></h1><span class="brand-subtitle">INTELLIGENCE LAB / PERSONAL ASSISTANT</span></div>
+      </div>
+      <div class="top-actions">
+        <div class="connection"><i class="status-dot"></i><span id="status">A verificar sistema...</span></div>
+        <button class="install-button" id="install" hidden>＋ Instalar APP</button>
+      </div>
+    </header>
+
+    <main>
+      <section class="lab-heading">
+        <div><span class="section-kicker">01 / CENTRAL DE COMANDO</span><h2>Bem-vindo ao <span>laboratório.</span></h2><p>O teu centro de inteligência, informática e criação digital.</p></div>
+        <div class="lab-clock"><span>AMBIENTE</span><strong>JOHN SKY LAB</strong><small>SECURE SESSION · NOVA v2</small></div>
+      </section>
+
+      <section class="workspace">
+        <aside class="side-panel">
+          <div class="panel-label">SISTEMAS</div>
+          <button class="nav-item active" data-prompt="Ajuda. Mostra as tuas capacidades de assistência técnica."><span class="nav-icon">⌘</span><span><b>Visão geral</b><small>Painel principal</small></span><i>›</i></button>
+          <button class="nav-item" data-prompt="Ajuda-me com assistência técnica de computadores, hardware e diagnóstico."><span class="nav-icon">▣</span><span><b>Assistência técnica</b><small>Hardware e manutenção</small></span><i>›</i></button>
+          <button class="nav-item" data-prompt="Ajuda-me a programar. Explica e cria exemplos em Python, HTML, CSS e JavaScript."><span class="nav-icon">⌨</span><span><b>Programação</b><small> código & desenvolvimento</small></span><i>›</i></button>
+          <button class="nav-item" data-prompt="Ajuda-me a estudar redes informáticas, protocolos, IP e configuração."><span class="nav-icon">⌁</span><span><b>Redes</b><small>Infraestrutura e conectividade</small></span><i>›</i></button>
+          <button class="nav-item" data-prompt="Ajuda-me com Windows 10 e Windows 11, configuração e resolução de problemas."><span class="nav-icon">▦</span><span><b>Windows</b><small>Sistema operativo</small></span><i>›</i></button>
+          <div class="side-divider"></div>
+          <div class="panel-label">CONTROLO DE VOZ</div>
+          <div class="voice-card"><div class="voice-card-head"><span class="sound-icon">♫</span><b>Resposta por voz</b></div><p>Escolhe quando a NOVA deve falar.</p><label class="switch-row"><span>Voz automática</span><input type="checkbox" id="autoVoice"><span class="switch"></span></label><small id="voiceState">Desligada · modo escrita</small></div>
+          <button class="history-button" id="history">◷ &nbsp; Consultar histórico</button>
+        </aside>
+
+        <section class="chat-panel">
+          <div class="chat-head"><div class="assistant-id"><div class="orb"><span></span></div><div><b>NOVA <em>AI</em></b><small><i class="status-dot"></i> ASSISTENTE ONLINE / PRONTA</small></div></div><div class="chat-head-right"><span class="secure-tag">● SESSÃO LOCAL</span><button class="icon-button" id="clear" title="Limpar conversa">↻</button></div></div>
+          <div class="messages" id="messages" aria-live="polite">
+            <div class="message-row bot-row"><div class="message-avatar">N</div><div class="message-content"><span class="message-name">NOVA AI <time>AGORA</time></span><div class="bubble bot">Olá! Sou a NOVA AI, assistente da JOHN SKY DESIGN. Estou pronta para ajudar com informática, programação, redes e muito mais. Como posso ajudar hoje?</div><div class="message-tools"><button class="listen-button" data-speak="Olá! Sou a NOVA AI, assistente da JOHN SKY DESIGN. Estou pronta para ajudar com informática, programação, redes e muito mais. Como posso ajudar hoje.">▶ Ouvir resposta</button></div></div></div>
+          </div>
+          <div class="composer-wrap">
+            <div class="composer-tools"><span>TERMINAL DE CONVERSA</span><span id="inputMode">MODO ESCRITA</span></div>
+            <form id="chatform"><button type="button" class="mic-button" id="mic" title="Ditado por voz">🎙</button><input id="prompt" maxlength="2000" autocomplete="off" placeholder="Escreve uma pergunta para a NOVA..." required><button class="send-button" type="submit"><span>Enviar</span><b>➤</b></button></form>
+            <div class="composer-foot"><span>ENTER PARA ENVIAR · MICROFONE PARA DITAR</span><span>JOHN SKY DESIGN © 2026</span></div>
+          </div>
+        </section>
+      </section>
+
+      <section class="capability-strip"><div><span>01</span><b>INFORMÁTICA</b><small>Diagnóstico & suporte</small></div><div><span>02</span><b>DESENVOLVIMENTO</b><small>Software & programação</small></div><div><span>03</span><b>REDES</b><small>Sistemas & conectividade</small></div><div><span>04</span><b>INTELIGÊNCIA</b><small>Assistência com IA</small></div></section>
+    </main>
+    <footer><span>DESIGNED BY <b>JOHN SKY DESIGN</b></span><span>NOVA AI · LAB INTERFACE v2.0</span></footer>
+  </div>
+  <script src="/app.js"></script>
+</body>
+</html>

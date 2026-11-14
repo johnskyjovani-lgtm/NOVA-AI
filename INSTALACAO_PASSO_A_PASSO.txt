@@ -1,0 +1,100 @@
+NOVA AI - JOHN SKY DESIGN | GUIA DE INSTALACAO NO WINDOWS
+
+ANTES DE COMECAR
+- Usa Windows 10 ou 11.
+- Para facilitar a compatibilidade, instala Python 3.12 de 64 bits.
+- Precisas de Internet para configurar a Groq e usar a IA online.
+- A chave Groq que foi publicada na conversa deve ser revogada; cria uma chave nova.
+
+PASSO 1 - EXTRAIR
+1. Clica com o botao direito em NOVA_AI_John_Sky.zip.
+2. Escolhe Extrair Tudo.
+3. Abre a pasta extraida NOVA_AI_John_Sky.
+
+PASSO 2 - INSTALAR PYTHON
+1. Abre https://www.python.org/downloads/release/python-31210/ ou a pagina oficial de downloads do Python.
+2. Descarrega o instalador Windows 64-bit do Python 3.12.
+3. Executa o instalador.
+4. Marca Add python.exe to PATH, se aparecer.
+5. Escolhe Install Now.
+6. Abre CMD e escreve: py --version
+7. Confirma que aparece Python 3.12.x.
+
+PASSO 3 - CRIAR CHAVE NOVA GROQ
+1. Abre https://console.groq.com/keys.
+2. Entra na tua conta.
+3. Revoga a chave que foi exposta no codigo partilhado.
+4. Cria uma chave nova e copia-a.
+5. NAO publiques nem envies essa chave em conversas.
+
+PASSO 4 - CONFIGURAR .env
+1. Dentro da pasta NOVA_AI_John_Sky, encontra .env.example.
+2. Faz uma copia e renomeia a copia para .env (sem .example no fim).
+3. Abre .env com o Bloco de Notas.
+4. Substitui COLOCA_A_TUA_NOVA_CHAVE_AQUI pela chave nova, sem aspas.
+5. Guarda o ficheiro. O nome deve ser exatamente .env.
+
+PASSO 5 - INICIAR
+1. Faz duplo clique em run_nova.bat.
+2. Na primeira utilizacao, o Windows cria um ambiente virtual e instala as bibliotecas.
+3. Aguarda a conclusao na janela preta.
+4. O navegador deve abrir http://127.0.0.1:5055.
+5. Mantem a janela preta aberta enquanto usas a NOVA.
+
+PASSO 6 - TESTAR A IA
+No painel, escreve: Ola NOVA, quem te criou?
+Depois testa: Explica HTML, CSS, JavaScript e SQL.
+A resposta aparece no painel. Com a opcao de voz marcada, a NOVA tenta ler a resposta.
+
+PASSO 7 - TESTAR COM MICROFONE
+- Usa Google Chrome ou Microsoft Edge atualizado.
+- Clica no botao do microfone no painel e permite acesso ao microfone.
+- Diz uma frase curta em portugues.
+- O reconhecimento do navegador depende do browser e normalmente requer Internet.
+
+PASSO 8 - COMANDOS LOCAIS DISPONIVEIS
+- Que horas sao?
+- Abre o Google.
+- Abre o YouTube.
+- Abre o WhatsApp.
+- Abre o Bloco de Notas (Windows).
+- Cria nota lembrar de estudar redes.
+- Lista os ficheiros.
+- Estado do computador.
+As notas sao guardadas dentro da pasta workspace.
+
+MODO DE VOZ PYTHON (OPCIONAL)
+1. Abre CMD dentro da pasta do projecto.
+2. Ativa o ambiente: .venv\Scripts\activate
+3. Instala PyAudio: pip install PyAudio
+4. Executa: python voice_mode.py
+5. Para terminar, diz: desligar nova.
+Se PyAudio der erro, usa o microfone do Chrome/Edge no painel ou instala uma versao compativel com a tua versao do Python.
+
+INTERNET E DADOS MOVEIS
+A NOVA usa a ligacao do computador. Podes ligar o PC ao hotspot do telemovel ou partilhar dados por USB/Wi-Fi. A Groq e o reconhecimento online precisam de Internet.
+
+O QUE FUNCIONA OFFLINE NESTA VERSAO
+A sintese de voz local pode funcionar offline depois de instalada. Os comandos locais que ja estao programados (hora, abrir algumas aplicacoes/sites e criar/listar notas) podem funcionar sem Internet. A conversa Groq e o reconhecimento online exigem Internet. Esta versao ainda nao inclui reconhecimento de fala offline nem um modelo de IA local.
+
+WHATSAPP
+O comando abre WhatsApp Web. A NOVA ainda nao envia nem recebe mensagens automaticamente. Isso exige integracao separada com a WhatsApp Business Platform/Cloud API e configuracao da conta.
+
+SEGURANCA E LIMITES
+A NOVA nao executa qualquer ordem arbitraria no Windows. Os comandos locais sao limitados de proposito. Nao executes scripts desconhecidos como administrador, nao entregues palavras-passe e nao guardes a chave Groq no JavaScript/HTML.
+
+RESOLUCAO DE PROBLEMAS
+- 'py nao e reconhecido': reinstala Python e marca Add Python to PATH; fecha e volta a abrir o CMD.
+- Erro de chave: confirma se o ficheiro se chama exatamente .env e se tem a chave nova.
+- Erro de modelo: confirma GROQ_MODEL=openai/gpt-oss-120b no .env.
+- Porta ocupada: fecha outra instancia da NOVA ou reinicia o computador.
+- Sem som: verifica volume, colunas e vozes instaladas no Windows.
+- Microfone bloqueado: permite acesso ao microfone nas definicoes do Windows e do navegador.
+
+
+PASSO 9 - NOVA AI COMO APP ANDROID E WINDOWS
+- Para testar no computador, inicia run_nova.bat e usa http://127.0.0.1:5055.
+- Para instalar como APP em Android ou noutro PC, publica a aplicação num alojamento com HTTPS.
+- Android: abre o endereço HTTPS no Chrome, toca no menu ⋮ e escolhe Instalar app / Adicionar ao ecrã inicial.
+- Windows: abre o endereço HTTPS no Edge ou Chrome e escolhe Instalar este site como aplicação.
+- O modo offline guarda apenas a interface; as respostas da IA continuam a exigir Internet.
